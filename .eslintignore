@@ -1,0 +1,7 @@
+webpack/*
+karma.conf.js
+tests.webpack.js
+src/redux/middleware/clientMiddleware.js
+src/theme/font-awesome.config.prod.js
+api/actions/index.js
+api/actions/widget/index.js
