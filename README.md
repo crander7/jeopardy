@@ -1,21 +1,12 @@
-# Gorgo
-
-Gorgo is a campaign audit application
-
-![](http://www.dinosaurusi.com/video_slike/QYPcRyJCbz-Dinosaurus_-_Dinosaur_-_Dinosaurio_-_Dinosaure_-_Gorgosaurus001.jpg)
-
 # Version
 
-0.0.5
+0.0.0
 
 ## Installation
 
 ```bash
 yarn or npm install
 ```
-
-Visit the [wiki](https://github.com/ZEFR-INC/gorgo/wiki/Python-&-PySpark-installation) for python install help
-
 
 ## Running Dev Server
 

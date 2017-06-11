@@ -4,6 +4,9 @@ import React from 'react';
 import { IndexRoute, Route } from 'react-router';
 
 import App from './components/App';
+import Home from './components/Home';
+import Game from './components/Game';
+import Creator from './components/Creator';
 import NotFound from './components/NotFound';
 
 /* may need to pass in store: export default (store) => {...} */
@@ -14,7 +17,8 @@ export default () => {
     return (
         <Route path="/" component={App}>
             <IndexRoute component={Home} />
-            <Route path="files" component={UploadedFiles} />
+            <Route path="create-game" component={Creator} />
+            <Route path="play" component={Game} />
             <Route path="*" component={NotFound} status={404} />
         </Route>
     );

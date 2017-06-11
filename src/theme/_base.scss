@@ -21,8 +21,8 @@ a {
 }
 
 .container {
-    @extend .padded-lg-left;
-    @extend .padded-lg-right;
+    @extend .padded-lg-left !optional;
+    @extend .padded-lg-right !optional;
     width: 970px;
     margin-right: auto;
     margin-left: auto;
