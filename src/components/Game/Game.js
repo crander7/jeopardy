@@ -28,17 +28,20 @@ class Game extends Component {
         return (
             <div className="game">Jeopardy
                 <div>
-                    {games.length > 0 && games.map(game => (<div>
-                        <div>
-                            {game.name}
+                    {games.length > 0 && games.map(game => (
+                        <div
+                            key={game.id}
+                        >
+                            <div>
+                                {game.name}
+                            </div>
+                            <div>
+                                {game.creator}
+                            </div>
+                            <div>
+                                {game.day_double}
+                            </div>
                         </div>
-                        <div>
-                            {game.creator}
-                        </div>
-                        <div>
-                            {game.day_double}
-                        </div>
-                    </div>
                     ))}
                 </div>
             </div>

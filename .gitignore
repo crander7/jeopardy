@@ -14,3 +14,4 @@ yarn-error.log
 .tmp/
 storybook-static/
 static_dist.tar
+src/env/

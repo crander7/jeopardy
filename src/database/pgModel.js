@@ -18,11 +18,15 @@ process.on('exit', () => {
 
 module.exports = {
     getGames: () => new Promise(async (resolve) => {
-        console.log('hit pgmodel');
-        const client = await pool.connect();
-        const data = await client.query('SELECT * FROM game');
-        console.log(data);
-        client.release();
-        resolve(data.rows);
+        let client = null;
+        try {
+            client = await pool.connect();
+            const data = await client.query('SELECT * FROM game');
+            client.release();
+            resolve(data.rows);
+        } catch (e) {
+            if (client) client.release();
+            resolve(null);
+        }
     })
 };
